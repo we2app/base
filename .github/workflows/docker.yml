@@ -25,12 +25,6 @@ jobs:
           echo $imageName
           echo "Repository name is ${GITHUB_REPOSITORY}"
           echo "Name ${{ github.event.repository.name }}"
-
-      - name: Docker meta
-        id: docker_meta
-        uses: crazy-max/ghaction-docker-meta@v1
-        with:
-          images: ${{ env.imageName }}
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
       - name: Set up Docker Buildx
