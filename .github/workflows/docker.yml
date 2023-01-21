@@ -23,6 +23,7 @@ jobs:
         run: |
           imageName="${{github.repository}}"
           echo $imageName
+          echo "Repository name is ${GITHUB_REPOSITORY}"
 
       - name: Docker meta
         id: docker_meta
