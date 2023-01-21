@@ -24,6 +24,7 @@ jobs:
           imageName="${{github.repository}}"
           echo $imageName
           echo "Repository name is ${GITHUB_REPOSITORY}"
+          echo "Name ${{ github.event.repository.name }}"
 
       - name: Docker meta
         id: docker_meta
