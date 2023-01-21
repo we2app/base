@@ -8,6 +8,7 @@ on:
 env:
   platforms: linux/amd64,linux/arm64/v8,linux/arm/v7,linux/s390x,linux/ppc64le,linux/riscv64
   imageName: we2app/base:latest
+  repoName: ${{github.repository}}
 
 jobs:
   login:
@@ -20,9 +21,8 @@ jobs:
       - name: Set imageName based on the repository name
         id: step_one
         run: |
-          imageName="${GITHUB_REPOSITORY/docker-/}"
+          imageName="${{github.repository}}"
           echo $imageName
-          echo "imageName=$imageName" >> $GITHUB_ENV
 
       - name: Docker meta
         id: docker_meta
