@@ -40,7 +40,7 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            uswe2app/base:latest
+            we2app/base:latest
             we2app/base:1.0.0
 
           
