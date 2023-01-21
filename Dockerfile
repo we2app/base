@@ -3,7 +3,7 @@ FROM ubuntu:20.04
 LABEL maintainer="atik@we2app.com" \
       org.label-schema.schema-version="1.0" \
       org.label-schema.name="Base Image" \
-      org.label-schema.description="Base Image for all images - base on Ubuntu 20.04" \
+      org.label-schema.description="Base Image for all images - base on Ubuntu 20.04" 
       
 ENV DEBIAN_FRONTEND=noninteractive \
       TERM=xterm
