@@ -44,6 +44,6 @@ jobs:
           push: true
           tags: |
             we2app/${{ github.event.repository.name }}:latest
-            we2app/${{ github.event.repository.name }}:22.04
+            we2app/${{ github.event.repository.name }}:24.04
 
           
